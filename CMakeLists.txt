@@ -8,7 +8,7 @@ include(ExternalProject)
 
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
-set(METIS_URL https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/metis-5.1.0.tar.gz)
+set(METIS_URL https://github.com/luhongquan66/thirdparty_library_binaries/raw/master/metis-5.1.0.tar.gz)
 set(METIS_CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CATKIN_DEVEL_PREFIX} -DCMAKE_BUILD_TYPE:STRING=Release -DSHARED:BOOL=TRUE -DGKLIB_PATH:STRING=${CMAKE_CURRENT_BINARY_DIR}/metis_src-prefix/src/metis_src/GKlib)
 
 # The following logic addresses a potential Xcode bug.
